@@ -8,7 +8,6 @@ function Testimonials() {
 		<section className="testimonial">
 			<div className="container wrapper">
 				<div className="testimonial-left">
-					<div className="bg"></div>
 					<div className="testimonial-card">
 						<div className="testimonial-card-top">
 							<p className="testimonial-card__ttl">
