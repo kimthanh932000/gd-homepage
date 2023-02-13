@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+//$clrPrimary:
+
+:root {
+	/* color */
+	--clr-orange: #da722c;
+	--clr-blue: #057ada;
+	--clr-glass: #e8f7fb;
+	--clr-blue-dark: #023047;
+	--clr-dark: #070917;
+	--clr-primary-light: #6f7dfb;
+	--clr-primary-dark: #26308C;
+
+	/* border-radius */
+	--br-primary: 24px;
+
+	/* font-size */
+	--fs-primary: 16px;
+	--fs-lg: 24px;
+	--fs-md: 18px;
+	--fs-sm: 14px;
+
+	--fs-heading-xxl: 60px;
+	--fs-heading-xl: 50px;
+	--fs-heading-lg: 40px;
+	--fs-heading-md: 36px;
+
+	/* font-weight */
+	--fw-bold: 700;
+	--fw-bold-extra: 900;
+
+	/* font-family */
+	--ff-primary: "Poppins", sans-serif;
+	--ff-secondary: 'Raleway', sans-serif;
+
+	/* line-height */
+	--lh-primary: 32px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: var(--fs-primary);
+	font-family: var(--ff-primary);
+	/*overflow: hidden;*/
+}
+
+.App {
+	position: relative;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 116px;
+	max-width: 1366px;
+}
+
+a,
+a:visited,
+a:link,
+a:active {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* utilities */
+.fw-900 {
+	font-weight: 900;
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+.br-24 {
+	border-radius: 24px;
+}

@@ -1,0 +1,39 @@
+.l-header {
+	background-color: var(--clr-primary-light);
+	display: flex;
+	justify-content: space-between;
+	padding-top: 42px;
+	// margin-top: 42px;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+}
+
+.p-logo {
+
+}
+
+.p-nav {
+
+	&-list {
+		display: flex;
+		gap: 60px;
+		align-items: center;
+	}
+
+	&__item:last-child {
+		padding: 16px 32px;
+		background-color: var(--clr-blue-dark);
+		border-radius: var(--br-primary);
+	}
+
+	&__link {
+		color: #fff!important;
+		font-weight: var(--fw-bold);
+		white-space: nowrap;
+	}
+}
