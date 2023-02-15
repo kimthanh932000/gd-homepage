@@ -1,10 +1,10 @@
 .courses {
 	font-family: var(--ff-secondary);
+	background: linear-gradient(180deg, var(--clr-primary-light) 0%, var(--clr-primary-dark) 100%);
 
 	.wrapper {
 		padding-top: 70px;
 		padding-bottom: 70px;
-		background: linear-gradient(180deg, var(--clr-primary-light) 0%, var(--clr-primary-dark) 100%);
 		text-align: center;
 	}
 
