@@ -1,3 +1,5 @@
+@import "src/assets/scss/abstract/mixins";
+
 .hero {
 	background: linear-gradient(180deg, var(--clr-primary-light) 0%, #26308C 100%);
 
@@ -35,15 +37,9 @@
 	}
 
 	&__btn {
-		background-color: var(--clr-orange);
-		border-radius: var(--br-primary);
-		border: none;
-		outline: none;
-		color: #fff;
-		font-size: var(--fs-md);
-		font-weight: var(--fw-bold-extra);
-		line-height: 27px;
-		padding: 20.5px 32px;
+		display: flex;
+		align-items: center;
+		@include btnPrimary(var(--clr-orange), var(--fs-md), 27px, 16px 32px);
 
 		.icon-pencil {
 			width: 18px;
@@ -118,6 +114,5 @@
 
 	&__img {
 		max-width: 100%;
-		// width: 100%;
 	}
 }

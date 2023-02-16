@@ -1,7 +1,9 @@
 import React from 'react';
-import testimonialJane from '../../../assets/images/testimonial-jane.png';
-import testimonialJacob from '../../../assets/images/testimonial-jacob.png';
+import testimonialJane from 'assets/images/testimonial-jane.png';
+import testimonialJacob from 'assets/images/testimonial-jacob.png';
 import './Testimonials.scss';
+import Button from "components/button/Button";
+import iconPencil from "assets/images/icon-pencial-alt.svg";
 
 function Testimonials() {
 	return (
@@ -49,9 +51,7 @@ function Testimonials() {
 						All students get access to all the videos and also the source code of<br/> the projects.<br/>
 						You will also have access to a private Discord channel where you can<br/> discuss your doubts.
 					</p>
-					<button className="testimonial__btn">
-						Learn More
-					</button>
+					<Button classes={`testimonial__btn`}>Learn More</Button>
 				</div>
 			</div>
 		</section>

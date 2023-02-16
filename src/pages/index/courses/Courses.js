@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import course01 from '../../../assets/images/course-1.png';
-import course02 from '../../../assets/images/course-2.png';
-import iconClock from '../../../assets/images/icon-clock.svg';
+import course01 from 'assets/images/course-1.png';
+import course02 from 'assets/images/course-2.png';
+import iconClock from 'assets/images/icon-clock.svg';
 import './Courses.scss';
+import Button from "components/button/Button";
 
 function Courses() {
 	return (
@@ -38,7 +39,7 @@ function Courses() {
 						</div>
 					</div>
 				</div>
-				<button className="courses__btn br-24 fw-700">All Courses</button>
+				<Button classes={`courses__btn`}>All Courses</Button>
 			</div>
 		</section>
 	);

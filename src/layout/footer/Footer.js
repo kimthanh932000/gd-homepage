@@ -1,6 +1,6 @@
 import './Footer.scss';
-import iconFb from '../../assets/images/icon-fb.svg';
-import iconInsta from '../../assets/images/icon-insta.svg';
+import iconFb from 'assets/images/icon-fb.svg';
+import iconInsta from 'assets/images/icon-insta.svg';
 
 export default function Footer() {
 	return (

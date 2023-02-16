@@ -1,0 +1,13 @@
+@mixin btnPrimary($bgrColor, $fs, $lh, $padding) {
+	border: none;
+	outline: none;
+	color: #fff;
+	padding: 16px 32px;
+	border-radius: 24px;
+	font-family: var(--ff-primary);
+	font-weight: 700;
+	font-size: $fs;
+	background: $bgrColor;
+	line-height: $lh;
+	padding: $padding;
+}

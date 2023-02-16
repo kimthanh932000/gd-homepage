@@ -1,7 +1,8 @@
-import iconStar from "../../../assets/images/icon-star.svg";
-import iconPencil from "../../../assets/images/icon-pencial-alt.svg";
-import heroImg from "../../../assets/images/hero-image 1.png";
+import iconStar from "assets/images/icon-star.svg";
+import iconPencil from "assets/images/icon-pencial-alt.svg";
+import heroImg from "assets/images/hero-image 1.png";
 import "./Hero.scss";
+import Button from "components/button/Button";
 
 export default function Hero() {
 	return (
@@ -17,10 +18,7 @@ export default function Hero() {
 						<br/> You will learn everything from generating an idea to
 						<br/> publishing your games to different platforms.
 					</p>
-					<button className="hero__btn">
-						<img src={iconPencil} alt="pencil" className="icon-pencil"/>
-						Enrol Now
-					</button>
+					<Button classes={`hero__btn`} img={{src: iconPencil, alt: 'pencil', classes: 'icon-pencil'}}>Enrol Now</Button>
 				</div>
 				<div className="hero-right">
 					<div className="hero__achievement">

@@ -1,7 +1,7 @@
 import React from 'react';
 import './AppDownload.scss';
-import iconApple from '../../../assets/images/icon-apple-store.svg';
-import iconGoogle from '../../../assets/images/icon-google-store.svg';
+import iconApple from 'assets/images/icon-apple-store.svg';
+import iconGoogle from 'assets/images/icon-google-store.svg';
 
 function AppDownload() {
 	return (

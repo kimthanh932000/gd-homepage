@@ -1,3 +1,5 @@
+@import "src/assets/scss/abstract/mixins";
+
 .courses {
 	font-family: var(--ff-secondary);
 	background: linear-gradient(180deg, var(--clr-primary-light) 0%, var(--clr-primary-dark) 100%);
@@ -72,17 +74,10 @@
 	}
 
 	&__btn {
-		border: none;
-		outline: none;
-		font-size: 18px;
-		background: var(--clr-orange);
-		font-family: var(--ff-primary);
-		color: #fff;
-		line-height: 27px;
-		padding: 16px 32px;
 		margin-top: 40px;
 		margin-left: auto;
 		margin-right: 0;
 		display: block;
+		@include btnPrimary(var(--clr-orange), var(--fs-md), 27px, 16px 32px);
 	}
 }

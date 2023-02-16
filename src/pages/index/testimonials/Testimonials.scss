@@ -1,3 +1,5 @@
+@import "src/assets/scss/abstract/mixins";
+
 .testimonial {
 
 	.wrapper {
@@ -115,14 +117,6 @@
 	}
 
 	&__btn {
-		border: none;
-		outline: none;
-		border-radius: var(--br-primary);
-		background-color: var(--clr-orange);
-		color: #fff;
-		font-weight: var(--fw-bold);
-		font-size: var(--fs-md);
-		line-height: 27px;
-		padding: 16px 32px;
+		@include btnPrimary(var(--clr-orange), var(--fs-md), 27px, 16px 32px);
 	}
 }

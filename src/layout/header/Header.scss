@@ -1,9 +1,10 @@
+@import "src/assets/scss/abstract/mixins";
+
 .l-header {
 	background-color: var(--clr-primary-light);
 	display: flex;
 	justify-content: space-between;
 	padding-top: 42px;
-	// margin-top: 42px;
 
 	.wrapper {
 		display: flex;
@@ -11,10 +12,6 @@
 		align-items: center;
 		width: 100%;
 	}
-}
-
-.p-logo {
-
 }
 
 .p-nav {
@@ -26,9 +23,10 @@
 	}
 
 	&__item:last-child {
-		padding: 16px 32px;
-		background-color: var(--clr-blue-dark);
-		border-radius: var(--br-primary);
+
+		.p-nav__btn {
+			@include btnPrimary(var(--clr-blue-dark), var(--fs-md), 27px, 16px 32px);
+		}
 	}
 
 	&__link {

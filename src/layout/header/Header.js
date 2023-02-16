@@ -1,5 +1,6 @@
-import logo from "../../assets/images/logo.png";
+import logo from "assets/images/logo.png";
 import "./Header.scss";
+import Button from 'components/button/Button';
 
 export default function Header() {
   return (
@@ -27,7 +28,7 @@ export default function Header() {
             </li>
             <li className="p-nav__item">
               <a href="#" className="p-nav__link">
-                Enroll Now
+				  <Button classes={`p-nav__btn`}>Enroll Now</Button>
               </a>
             </li>
           </ul>
