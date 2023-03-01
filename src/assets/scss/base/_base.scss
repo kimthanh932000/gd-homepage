@@ -1,3 +1,5 @@
+@import "src/assets/scss/abstract/mixins";
+
 * {
 	padding: 0;
 	margin: 0;
@@ -5,6 +7,7 @@
 }
 
 body {
+	height: 100%;
 	font-size: var(--fs-primary);
 	font-family: var(--ff-primary);
 }
@@ -14,8 +17,26 @@ body {
 }
 
 .container {
+	--padding: 116px;
+
+	@include respond(tab) {
+		--padding: 100px;
+	}
+
+	@media (max-width: 600px) {
+		--padding: 70px;
+	}
+
+	@media (max-width: 500px) {
+		--padding: 50px;
+	}
+
+	@include respond(phone-port) {
+		--padding: 32px;
+	}
+
+	width: calc(100% - (var(--padding) * 2));
 	margin: 0 auto;
-	padding: 0 116px;
 	max-width: 1366px;
 }
 

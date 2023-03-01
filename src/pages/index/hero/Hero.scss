@@ -8,18 +8,61 @@
 		position: relative;
 		display: flex;
 		justify-content: space-between;
+
+		@include respond(tab) {
+			flex-direction: column;
+			padding-top: 155px;
+		}
+
+		@include respond(phone-land) {
+			padding-top: 58px;
+		}
 	}
 
 	&-left {
+		width: 40.3%;
 		color: #fff;
 		margin-top: 33px;
+
+		@include respond(desktop) {
+			margin-bottom: 30px;
+		}
+
+		@include respond(tab) {
+			width: 100%;
+		}
 	}
 
 	&-right {
-		width: 446px;
+		width: 39.4%;
 		height: 582px;
-		margin-right: -39px;
+		margin-right: -34px;
 		position: relative;
+
+		@include respond(lg-desktop) {
+			max-width: 446px;
+		}
+
+		@media (max-width: 1317px) {
+			margin-right: -34px;
+			height: auto;
+		}
+
+		@include respond(desktop) {
+			margin-right: -80px;
+			display: flex;
+		}
+
+		@include respond(tab) {
+			width: 78.3%;
+			margin-right: -100px;
+			margin-top: -10%;
+			align-self: flex-end;
+		}
+
+		@include respond(phone-port) {
+			margin-right: -87px;
+		}
 	}
 
 	&__ttl {
@@ -28,6 +71,15 @@
 		font-weight: var(--fw-bold-extra);
 		line-height: 62.5px;
 		margin-bottom: 18px;
+
+		@include respond(tab) {
+			margin-bottom: 16px;
+		}
+
+		@include respond(phone-land) {
+			font-size: 36px;
+			line-height: 45px;
+		}
 	}
 
 	&__txt {
@@ -39,7 +91,12 @@
 	&__btn {
 		display: flex;
 		align-items: center;
+
 		@include btnPrimary(var(--clr-orange), var(--fs-md), 27px, 16px 32px);
+
+		@include respond(tab) {
+			font-size: 16px;
+		}
 
 		.icon-pencil {
 			width: 18px;
@@ -62,23 +119,89 @@
 		}
 
 		&:first-child {
-			top: 30px;
 			top: 141px;
-			left: -200px;
+			left: -45% /* -200px */;
+
+			@include respond(desktop) {
+				left: -60%
+			}
+
+			@include respond(tab) {
+				left: -44%;
+				top: 33.3%;
+			}
+
+			@media (max-width: 660px) {
+				top: 25%;
+				left: -58%;
+			}
+
+			@media (max-width: 500px) {
+				left: -62%;
+			}
+
+			@include respond(phone-port){
+				left: -64%;
+				top: 32%;
+			}
 
 			.bg {
 				top: 8px;
 				left: 7px;
+
+				@include respond(tab) {
+					height: 109%;
+					top: 0;
+					left: 7px;
+				}
+
+				@include respond(phone-land) {
+					top: 0;
+					left: 11px;
+				}
 			}
 		}
 
 		&:nth-child(2) {
 			bottom: 102px;
-			left: -250px;
+			left: -56%;
 
-			.bg {
+			@include respond(desktop) {
+				left: -70%
+			}
+
+			@include respond(tab) {
+				left: -44%;
+				bottom: 20.7%;
+			}
+
+			@media (max-width: 660px) {
+				left: -58%;
+			}
+
+			@media (max-width: 500px) {
+				left: -62%;
+			}
+
+			@include respond(phone-port){
+				left: -60%;
+				bottom: 14%;
+			}
+
+				.bg {
 				top: 8px;
 				left: 5px;
+
+				@include respond(tab) {
+					height: 104%;
+					top: 3px;
+					left: 5px;
+				}
+
+				@include respond(phone-land) {
+					top: 0;
+					left: 13px;
+				}
 			}
 			.icon-star {
 				margin-left: 4px;
@@ -99,20 +222,43 @@
 					font-size: 36px;
 					font-weight: var(--fw-bold-extra);
 					line-height: 45px;
+
+					@include respond(tab) {
+						font-weight: 700;
+					}
+
+					@include respond(phone-land) {
+						font-size: 30px;
+						font-weight: 700;
+						line-height: 37.5px;
+					}
 				}
 			}
 
 			&:first-child {
 				padding: 7px 33.5px 18px;
+
+				@include respond(phone-land) {
+					padding: 6px 35px 13px 26px;
+				}
 			}
 
 			&:nth-child(2) {
 				padding: 9px 30px 16px 41px;
+
+				@include respond(phone-land) {
+					padding: 6px 33px 13px 22px;
+				}
 			}
 		}
 	}
 
 	&__img {
 		max-width: 100%;
+
+		@media (max-width: 1048px) {
+			align-self: flex-end;
+			display: inline-flex;
+		}
 	}
 }

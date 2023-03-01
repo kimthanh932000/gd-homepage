@@ -11,3 +11,21 @@
 	line-height: $lh;
 	padding: $padding;
 }
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == phone-port {
+		@media (max-width: 414px) {@content};
+	}
+	@if $breakpoint == phone-land {
+		@media (max-width: 768px) {@content};
+	}
+	@if $breakpoint == tab {
+		@media (max-width: 834px) {@content};
+	}
+	@if $breakpoint == desktop {
+		@media (max-width: 1200px) {@content};
+	}
+	@if $breakpoint == lg-desktop {
+		@media (min-width: 1366px) {@content};
+	}
+}

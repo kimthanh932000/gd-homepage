@@ -19,6 +19,7 @@
 	&-content {
 		color: var(--clr-blue-dark);
 		display: flex;
+		justify-content: center;
 		gap: 73px;
 	}
 
@@ -61,6 +62,9 @@
 		&__ttl {
 			font-size: 30px;
 			line-height: 45px;
+			width: 370px;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 
 		&__duration {
