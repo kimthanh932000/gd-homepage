@@ -17,27 +17,19 @@ body {
 }
 
 .container {
-	--padding: 116px;
+	--padding: 8.5%;
 
 	@include respond(tab) {
-		--padding: 100px;
-	}
-
-	@media (max-width: 600px) {
-		--padding: 70px;
-	}
-
-	@media (max-width: 500px) {
-		--padding: 50px;
+		--padding: 12%;
 	}
 
 	@include respond(phone-port) {
-		--padding: 32px;
+		--padding: 7.7%;
 	}
 
 	width: calc(100% - (var(--padding) * 2));
 	margin: 0 auto;
-	max-width: 1366px;
+	max-width: 1140px;
 }
 
 a,
