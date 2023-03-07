@@ -3,7 +3,7 @@
 .hero {
 	background: linear-gradient(180deg, var(--clr-primary-light) 0%, #26308C 100%);
 
-	.wrapper {
+	.container {
 		padding-top: 85px;
 		position: relative;
 		display: flex;
@@ -106,6 +106,10 @@
 		.hero__achievement {
 			position: absolute;
 			color: var(--clr-blue-dark);
+
+			@include respond(phone-land) {
+				z-index: 5;
+			}
 
 			.bg {
 				width: 100%;
