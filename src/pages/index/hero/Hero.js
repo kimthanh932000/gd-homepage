@@ -7,7 +7,7 @@ import Button from "components/button/Button";
 export default function Hero() {
 	return (
 		<section className="hero">
-			<div className="container wrapper">
+			<div className="container">
 				<div className="hero-left">
 					<h1 className="hero__ttl">
 						Learn the art of Game Dev

@@ -17,7 +17,11 @@ body {
 }
 
 .container {
-	--padding: 8.5%;
+	width: calc(100% - (var(--padding) * 2));
+	margin-inline: auto;
+	max-width: 1140px;
+
+	--padding: 8.63%;
 
 	@include respond(tab) {
 		--padding: 12%;
@@ -26,10 +30,6 @@ body {
 	@include respond(phone-port) {
 		--padding: 7.7%;
 	}
-
-	width: calc(100% - (var(--padding) * 2));
-	margin: 0 auto;
-	max-width: 1140px;
 }
 
 a,

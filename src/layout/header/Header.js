@@ -16,7 +16,7 @@ export default function Header() {
 
 	return (
 		<header className="l-header">
-			<div className="container wrapper">
+			<div className="container">
 				<div className="p-logo">
 					<img className="p-logo__img" src={logo} alt="logo"/>
 				</div>
